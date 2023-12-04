@@ -1,29 +1,56 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
-</script>
+
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+   <div id="app">
+    <!-- VIDEO POZADINA -->
+    <div class="background-container">
+      <video class="background-video" autoplay muted loop>
+      <source src="../src/assets/PozadinaVideo.mp4" type="video/mp4">
+    </video>
     </div>
+   
+
+  
+
+
+  <header class="header">
+    
+    <img class="logo" src="../src/assets/Logo1R.png" width="180" height="150" />
+    <nav>
+      <RouterLink to="/">Online Program</RouterLink>
+      <RouterLink to="/mentorstvo">BMI Calculator</RouterLink>
+      <RouterLink to="/galerija">Galerija</RouterLink>
+      <RouterLink to="/kontakt">Kontakt</RouterLink>
+    </nav>
   </header>
 
   <RouterView />
+  
+</div>
 </template>
 
+<script setup>
+import { RouterLink, RouterView } from 'vue-router'
+
+</script>
+
 <style scoped>
-header {
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the entire container */
+  z-index: -5; /* Place the video behind other content */
+}
+.header {
+  position: absolute;
+  top: 10px;
   line-height: 1.5;
   max-height: 100vh;
+  background-color: rgb(0,0,0,0.7);
+  
 }
 
 .logo {
@@ -77,7 +104,6 @@ nav a:first-of-type {
     text-align: left;
     margin-left: -1rem;
     font-size: 1rem;
-
     padding: 1rem 0;
     margin-top: 1rem;
   }
