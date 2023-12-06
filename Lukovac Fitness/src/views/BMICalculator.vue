@@ -8,7 +8,7 @@ const selectedOption = ref(null);
 const heightInCm = ref(null);
 const weightInKg = ref(null);
 const bmiResult = ref(null);
-
+ /* PITANJA ZA KVIZ */
 const questions = [
   {
     question: 'How would you describe your physical build?',
@@ -43,6 +43,9 @@ const questions = [
   // Add more questions here...
 ];
 
+
+
+/* MEHANIKA KVIZA */
 const openBMIQuiz = () => {
   isQuizOpen.value = true;
 };
@@ -80,6 +83,9 @@ const isValidInput = () => {
   }
   return false;
 };
+
+
+/* RACUNANJE BMI */
 
 const calculateBMIResults = () => {
   const height = parseFloat(heightInCm.value) / 100; // convert height to meters

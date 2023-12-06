@@ -3,46 +3,38 @@
 </script>
 
 <template>
-    <body class="bodyKontakt">
-         
-<div>
- <h1>Kontaktirajte me</h1>
-</div>
-<div class="Linkovi">
-      <a href="https://www.instagram.com/w211_o_o/">
-        <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
-      </a>
-      <a href="">
-        <i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>
-      </a>
-      <a href="">
-        <i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i>
-      </a>
-      <a href="">
-        <i class="fa fa-mobile fa-lg" aria-hidden="true"></i>
-      </a>
-    </div>
-<p class="text">Ili popunite formular:</p>
-<div class="formular">
-    <div class="form-field">
-        <div>
-            <input type="text" id="name" name="FullName" placeholder="Ime">
-        </div>
-    </div>
-    <div class="form-field">
-        <div>
-            <input type="text" id="email" name="Email" placeholder="Email">
-        </div>
-    </div>
-    <div class="form-field">
-        <div>
-            <textarea name="Enquiry" id="message" cols="30" rows="10" placeholder="Poruka"></textarea>
-            <!-- Ovaj deo proveriti za validaciju -->
-            <span class="field-validation-valid" data-valmsg-for="Enquiry"></span> 
-        </div>
-    </div>
-</div>
-</body>
+  <body class="bodyKontakt">
+      <div>
+          <h1>Kontaktirajte me</h1>
+      </div>
+      <div class="Linkovi">
+          <!-- Your social media links go here -->
+      </div>
+      <p class="text">Ili popunite formular:</p>
+      <div class="formular">
+          <form>
+              <div class="form-field">
+                  <label for="name">Ime:</label>
+                  <div>
+                      <input type="text" id="name" name="FullName" placeholder="Ime">
+                  </div>
+              </div>
+              <div class="form-field">
+                  <label for="email">Email:</label>
+                  <div>
+                      <input type="email" id="email" name="Email" placeholder="Email">
+                  </div>
+              </div>
+              <div class="form-field">
+                  <label for="message">Poruka:</label>
+                  <div>
+                      <textarea name="Enquiry" id="message" cols="30" rows="10" placeholder="Poruka"></textarea>
+                      <span class="field-validation-valid" data-valmsg-for="Enquiry"></span>
+                  </div>
+              </div>
+          </form>
+      </div>
+  </body>
 </template>
 
 <style scoped>
@@ -69,12 +61,7 @@ h1 {
   font-size: 50px;
   font-weight: 500;
 }
-/*.Linkovi{
-  color: white;
-  position: absolute;
-  top: 20%;
-  left: 75%;
-}*/
+
 .formular {
     color: white;
     position: absolute;
