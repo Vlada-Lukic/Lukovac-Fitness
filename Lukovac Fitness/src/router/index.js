@@ -6,13 +6,13 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: () => import('../views/HomeView.vue')
+      name: 'onlineprogram',
+      component: () => import('../views/OnlineProgram.vue')
     },
     {
-      path: '/mentorstvo',
-      name: 'mentorstvo',
-      component: () => import('../views/MentorstvoView.vue')
+      path: '/bmicalculator',
+      name: 'bmicalculator',
+      component: () => import('../views/BMICalculator.vue')
     },
     {
       path: '/galerija',
@@ -28,3 +28,4 @@ const router = createRouter({
 })
 
 export default router
+

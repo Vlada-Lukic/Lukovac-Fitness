@@ -1,7 +1,7 @@
 @import './base.css';
 
  #app { 
-  margin: 0 auto;
+  margin: 0;
   font-weight: normal;
   /* background-image: url(../assets/PozadinaHome2.png); */
   background-size: cover;

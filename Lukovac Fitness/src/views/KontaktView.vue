@@ -51,16 +51,19 @@ background-image: url(../assets/Butt2.png);
 background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 95vh;
-  width: 80%;
+  height: 90vh;
+  width: 30%;
   border-radius: 250px 10px 250px 10px;
   margin-left: 10%;
+  position: absolute;
+  top: 5%;
+  left: 50%;
 }
 h1 {
   color: white;
   position: absolute;
   top: 10%;
-  left: 75%;
+  left: 65%;
   transform: translateX(-50%);
   text-align: center;
   font-size: 50px;
@@ -76,7 +79,7 @@ h1 {
     color: white;
     position: absolute;
     top: 35%;
-    left: 75%;
+    left: 42%;
 }
 
 .form-field {
@@ -98,7 +101,7 @@ h1 {
     color: white;
   position: absolute;
   top: 35%;
-  left: 65%;
+  left: 10%;
 }
 
 
